@@ -1,0 +1,23 @@
+{
+  "materials": {
+    "version": "1.0.0",
+    "custom_shader": {
+      "vertexShader": "shaders/main.vert",
+      "fragmentShader": "shaders/main.frag",
+      "samplers": [
+        {"name": "u_texture", "texture": "textures/blocks/block.png"},
+        {"name": "u_skytex", "texture": "textures/environment/sky.png"},
+        {"name": "u_redstonetex", "texture": "textures/blocks/redstone.png"},
+        {"name": "u_flowertex", "texture": "textures/blocks/flower_glow.png"},
+        {"name": "u_moontex", "texture": "textures/environment/moon.png"},
+        {"name": "u_raintex", "texture": "textures/environment/rain.png"}
+      ],
+      "uniforms": [
+        {"name": "u_time", "type": "float", "value": 0.0},
+        {"name": "u_rain_intensity", "type": "float", "value": 0.0},
+        {"name": "u_moon_phase", "type": "float", "value": 0.5},
+        {"name": "u_redstone_power", "type": "float", "value": 0.0}
+      ]
+    }
+  }
+}
